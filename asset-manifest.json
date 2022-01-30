@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/adisoft/static/css/main.38c4c8fc.css",
+    "main.js": "/adisoft/static/js/main.e1996b21.js",
+    "static/js/787.75561ac8.chunk.js": "/adisoft/static/js/787.75561ac8.chunk.js",
+    "static/media/why-us.jpg": "/adisoft/static/media/why-us.f9d3f4d0543e5484d2e7.jpg",
+    "static/media/contact-form.jpg": "/adisoft/static/media/contact-form.0a385dc6ceba3de3bac2.jpg",
+    "static/media/tools.jpg": "/adisoft/static/media/tools.6618bd7198aeb5ddbeca.jpg",
+    "static/media/slide-1.jpg": "/adisoft/static/media/slide-1.3629caf8be750f1c3f2a.jpg",
+    "static/media/slide-4.jpg": "/adisoft/static/media/slide-4.4f359e262dc350819eb7.jpg",
+    "static/media/slide-2.jpg": "/adisoft/static/media/slide-2.19651751621ae0681758.jpg",
+    "static/media/slide-3.jpg": "/adisoft/static/media/slide-3.a6f737f24e26cbc15abc.jpg",
+    "static/media/NunitoSans-Light.ttf": "/adisoft/static/media/NunitoSans-Light.4cffb0809d61ec7ecdff.ttf",
+    "static/media/NunitoSans-Bold.ttf": "/adisoft/static/media/NunitoSans-Bold.f2f18c2e01d2f39c18c9.ttf",
+    "static/media/NunitoSans-Regular.ttf": "/adisoft/static/media/NunitoSans-Regular.25d5a42e25da2f3ed7f4.ttf",
+    "static/media/logo.jpg": "/adisoft/static/media/logo.b0723d47b4ffcea11198.jpg",
+    "static/media/world.svg": "/adisoft/static/media/world.b08dd70e8b71c0b9d09c8f7beb21213f.svg",
+    "static/media/location.svg": "/adisoft/static/media/location.0aad80c12722b09234c00dfb4e06f3ab.svg",
+    "static/media/phone.svg": "/adisoft/static/media/phone.bffa3aefc6630d8b1329284d39d499d0.svg",
+    "static/media/email.svg": "/adisoft/static/media/email.57550167573048850d82408849c24ffd.svg",
+    "index.html": "/adisoft/index.html",
+    "static/media/arrow-right.svg": "/adisoft/static/media/arrow-right.2bf9202f04458951b8a07078440a2718.svg",
+    "static/media/arrow-left.svg": "/adisoft/static/media/arrow-left.192a07d3e998be0b3cd5826281f89799.svg",
+    "main.38c4c8fc.css.map": "/adisoft/static/css/main.38c4c8fc.css.map",
+    "main.e1996b21.js.map": "/adisoft/static/js/main.e1996b21.js.map",
+    "787.75561ac8.chunk.js.map": "/adisoft/static/js/787.75561ac8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.38c4c8fc.css",
+    "static/js/main.e1996b21.js"
+  ]
+}
