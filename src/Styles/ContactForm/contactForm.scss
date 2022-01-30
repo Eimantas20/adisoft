@@ -1,0 +1,227 @@
+@use '../abstracts' as a;
+
+.form-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    max-height: 1041px;
+    background-color:a.$primaryCol;
+
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+.form > p:first-of-type {
+    font-size:1.625rem;
+}
+
+.form-container-2 {
+    width:624px;
+}
+
+.form-half {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem;
+}
+
+.form-container-2 {
+    max-height: 1041px;
+    max-width: 1584px;
+    background-color:a.$primaryCol;
+
+    &>p {
+        font-size: 1.625rem;
+    }
+    h2, p, label, a {
+        color: #fff;
+    }
+    label {
+        font-family: 'Nunito Sans Light', 'Courier New', Courier, monospace;
+        font-size: 1.25rem;
+    }
+    .bottom-gap {
+        margin-bottom: 2rem;
+    }
+
+    .categories-cont > p {
+        width: 100%;
+    }
+    .categories-cont {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .active {
+            background-color: #fff;
+
+            p {
+                color:#1C1C1B;
+            }
+        }
+
+        p {
+            font-family: 'Nunito Sans Light', 'Courier New', Courier, monospace;
+            font-size:1.25rem;
+            margin: 0;      
+        }
+        button {
+            height:2.375rem;
+            border: 2px solid #fff;
+            border-radius: 2.375rem;
+            background-color: a.$primaryCol;
+            margin-bottom: 1rem;
+            padding: 0 1rem;
+        }
+        :hover {
+            cursor: pointer;
+        }
+    }
+
+    .inputs {
+        display:grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1rem;
+
+        .full {
+            grid-column: 1 / span 2;
+        }
+        label {
+            display:block;
+        }
+        input {
+            width: 100%;
+            border:unset;
+            height: 38px;
+            border-radius: 30px;
+            padding-left:1.5rem;
+        }
+        ::-webkit-placeholder {
+            font-family: 'Nunito Sans Light', 'Courier New', Courier, monospace;
+            font-size:1.25rem;
+            color:#1C1C1B;
+        }
+        ::-ms-placeholder {
+            font-family: 'Nunito Sans Light', 'Courier New', Courier, monospace;
+            font-size:1.25rem;
+            color:#1C1C1B;
+        }
+        ::placeholder {
+            font-family: 'Nunito Sans Light', 'Courier New', Courier, monospace;
+            font-size:1.25rem;
+            color:#1C1C1B;
+        }
+    }
+
+    .checkbox {
+        input {
+            width: 20px;
+            height: 20px !important;
+        }
+        a {
+            text-decoration: underline;
+            font-size: 1rem;
+        }
+    }
+    .submitBtn {
+        margin-top: 1rem;
+    }
+}
+
+.form-fullscreen{
+    background-color:a.$primaryCol;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+
+    .form-container-2 {
+        width:inherit;
+    }
+    .inputs {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+    .form {
+        grid-column: unset !important;
+    }
+    .categories-cont {
+        grid-column: 2 / span 3 !important;
+        justify-content: start;
+
+        button {
+            margin-right: 1rem;
+        }
+    }
+}
+
+
+@media screen and (min-device-width: 992px) and (max-width: 1312px) {
+    .form-container-2 {
+        &>p {
+            font-size: 1.25rem !important;
+        }
+        .categories-cont {
+            p {
+                font-size: 1.125rem;
+            }
+        }
+        .inputs {
+            label, ::placeholder {
+                font-size: 1.125rem;    
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .form-half {
+        margin: 1rem;
+    }
+    .form-container-2 {
+        &>p {
+            font-size: 1rem !important;
+        }
+        .categories-cont {
+            p {
+                font-size:0.875rem;
+            }
+        }
+        .inputs {
+
+            label, ::placeholder {
+                font-size: 0.875rem;    
+            }
+        }
+        .checkbox a {
+            font-size: 0.75rem;
+        }
+        .submitBtn.btn {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .form-container {
+        grid-template-columns: unset;
+        grid-template-rows: repeat(2, auto);
+
+        .form-half {
+            grid-row-start: 2;
+        }
+        img {
+            max-height: 250px;;
+        }
+    }
+
+    .form-container-2 {
+        width:100%;
+        .inputs {
+            display:block;
+        }
+    }
+}

@@ -1,0 +1,100 @@
+@import '../../Styles/abstracts/index';
+
+.slider-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.info-container {
+    margin: auto 10.5rem;
+}
+
+.slider {
+    position: relative;
+
+    .slide {
+        height:100vh;
+        width:100%;
+        object-fit: cover;
+        position: absolute;
+        opacity:0;
+        left:0;
+        transition: opacity ease 0.4s;
+    }
+    .slide-logo {
+        position:absolute;
+        bottom: 3rem;
+        left: 50%;
+        transform: translateX(-50%);
+        opacity: 0;
+        transition: opacity ease 0.4s;
+    }
+    .active-logo {
+        opacity: 1;
+    }
+    .active {
+        opacity: 1;
+        position:unset;
+    }
+    .slider-logo img {
+        position: absolute;
+        bottom: 25px;
+        left:50%;
+        transform: translateX(-50%);
+    }
+}
+
+@media screen and (min-device-width: 992px) and (max-width: 1312px) {
+    .info-container {
+        margin: auto 6rem;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .info-container {
+        margin: auto 1rem;
+    }
+    .slider-container {
+
+        h2 {
+            font-size: 1.75rem;
+        }
+        p{
+            font-size: 1.25rem;
+        }
+        .btn, a {
+            font-size: 1rem;
+        }
+    }
+    .slide-logo {
+        bottom:1rem;
+        transform-origin: bottom center;
+        transform: translateX(-50%) scale(0.75);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .slider-container {
+        grid-template-columns: unset;
+        grid-template-rows: repeat(2, auto);
+        gap:1rem;
+        margin-bottom: 2rem;
+    }
+
+    .slider {
+        grid-row-start: 1;
+        max-height: 250px;
+        
+        .slide {
+            width:100%;
+            height:100%;
+            object-fit: cover;
+            max-height: 250px;
+        }
+        .slide-logo {
+            bottom:1rem;
+            transform-origin: bottom center;
+            transform: translateX(-50%) scale(0.5);
+        }
+    }
+}

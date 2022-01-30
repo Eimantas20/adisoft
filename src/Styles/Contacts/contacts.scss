@@ -1,0 +1,97 @@
+@use '../abstracts' as a;
+
+.contacts {
+    background-color: a.$darkGrey;
+    padding: 3rem 0;
+
+    h2 {
+        font-family: "Nunito Sans Bold", 'Courier New', Courier, monospace;
+        font-weight: 800;
+        font-size: 3.25rem;
+        color: #fff;
+        white-space: pre-wrap;
+        text-align: center;
+        text-transform: unset;
+        margin-top: 0;
+    }
+    p {
+        font-family: "Nunito Sans Light", 'Courier New', Courier, monospace;
+        font-weight: 300;
+        font-size: 1.25rem;
+        color: #fff;
+        text-align: center;
+    }
+    .contacts-list {
+        display:flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .contact {
+        display: flex;
+        flex-direction: row;
+
+        img{
+            margin-right: 1rem
+        }
+        p {
+            margin-right: 2rem;
+            font-size: 1.25rem;
+            color:#fff;
+            font-family: "Nunito Sans Light", 'Courier New', Courier, monospace;
+        }
+    }
+    a {
+        color:#fff;
+        text-decoration: unset;
+    }
+}
+
+
+@media screen and (min-device-width: 992px) and (max-width: 1312px) {
+    .contacts {
+
+        h2 {
+            font-size:2.375rem;
+        }
+        .contact {
+
+            p {
+                font-size: 1.125rem;
+            }
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 992px) {
+    .form-fullscreen {
+        padding: 1rem
+    }
+    .contacts {
+
+        h2 {
+            font-size:1.625rem;
+        }
+        .contact {
+
+            p {
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .contacts {
+        .contacts-list {
+            display: block;
+            
+            .contact {
+                justify-content: center;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+}
+   

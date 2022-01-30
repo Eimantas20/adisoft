@@ -1,0 +1,82 @@
+@use '../abstracts' as a;
+
+.whyus-container {
+    margin: 9rem 0;
+    display:grid;
+    grid-template-columns: 40% 60%;
+
+    .facts-container {
+        margin: 0 3rem;
+    }
+    h2{ 
+        margin-top:0;
+    }
+    img{
+        height: auto;
+        width: 100%;
+        object-fit: cover;
+        max-height: 1046px;
+    }
+    .whyus-facts {
+        display:grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap:1rem;
+    }
+    .fact-number {
+        border-bottom: 1px solid #000;
+        padding-bottom: 1rem;
+        margin-bottom: 1rem;
+    }
+    .fact-title {
+        font-family: "Nunito Sans Bold", 'Courier New', Courier, monospace;
+        font-weight: 800;
+        padding-bottom: 1rem;
+    }
+    .btn {
+        display:flex;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 1312px) {
+    .whyus-container h2 {
+        font-size: 2.125rem;
+    }
+    .whyus-facts {
+
+        p {
+            font-size: 1rem;
+        }
+    }
+    p.fact-number {
+       
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 992px) {
+  .whyus-container h2 {
+        font-size: 1.625rem;
+    }
+    p.fact-number {  
+        font-size: 1.75rem;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .whyus-container {
+        display:block;
+        margin-top: 0;
+        margin-bottom: 1rem;
+        
+        .facts-container {
+            margin: 0 1rem;
+        }
+        .btn{ 
+            display:block;
+            width:100%;
+            margin-top:1rem;
+        }
+    }
+}

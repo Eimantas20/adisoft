@@ -1,0 +1,12 @@
+.slider-btn {
+    position: absolute;
+    top: 50%;
+
+    &.left {
+        left: 15px;
+    }
+
+    &.right {
+        right: 15px;
+    }
+}

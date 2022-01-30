@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import Slider from './Components/Slider/Slider';
+import ExtraInfo from './Components/ExtraInfo/ExtraInfo';
+import ContactForm from './Components/ContactForm/ContactForm';
+import AboutUs from './Components/AboutUs/AboutUs';
+import WhyUs from './Components/WhyUs/WhyUs';
+import Contacts from './Components/Contacts/Contacts';
+import FullContactForm from './Components/ContactForm/FullContactForm';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Slider />
+      <ExtraInfo />
+      <FullContactForm />
+      <AboutUs />
+      <div className='br' />
+      <WhyUs />
+      <ContactForm fullscreen={true} />
+      <Contacts />
     </div>
   );
 }
